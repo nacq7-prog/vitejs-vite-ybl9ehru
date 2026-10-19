@@ -1,0 +1,84 @@
+/* Variables de color de la Paleta Web3 & Contabilidad */
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary: #1a16ff;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+
+  /* Estados de solicitudes / rendiciones */
+  --status-pending: #f59e0b;
+  --status-approved: #10b981;
+  --status-observed: #ef4444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout general del proyecto */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 28px 36px;
+  background-color: var(--bg-main);
+  overflow-y: auto;
+}
+
+/* Tablas con diseño limpio */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-top: 16px;
+}
+
+th {
+  background-color: #f1f5f9;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+/* Insignias de Estado */
+.badge-pending {
+  background-color: #fef3c7;
+  color: #d97706;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge-approved {
+  background-color: #d1fae5;
+  color: #059669;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
